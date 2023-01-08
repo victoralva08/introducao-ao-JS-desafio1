@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+    alert(`Vamos fazer algumas operações matemáticas? Insira, a seguir, dois números, que serão somados, subtraídos, multiplicados e divididos.`)
+
+    let numberOne = Number(prompt('Digite o primeiro valor'))
+    let numberTwo = Number(prompt('Digite o segundo valor'))
+
+    let sum = (numberOne + numberTwo).toFixed(2)
+
+    let subt = (numberOne - numberTwo).toFixed(2)
+
+    let multi = (numberOne * numberTwo).toFixed(2)
+
+    let div = (numberOne / numberTwo).toFixed(2)
+
+    let remainder = numberOne % numberTwo
+
+    let even = sum % 2
+
+    if (even == 0 && numberOne == numberTwo) {
+        alert(`${numberOne} e ${numberTwo} são números idênticos. O resultado da soma de ${numberOne} + ${numberTwo} é ${sum}. A subtração de ${numberOne} - ${numberTwo} é ${subt}. 
+O produto dos dois números é ${multi}. A divisão de ${numberOne} por ${numberTwo} é ${div}, e o resto é ${remainder}. ${sum} é um número par.`)
+
+    } else if (even == 0) {
+        alert(`O resultado da soma de ${numberOne} + ${numberTwo} é ${sum}. A subtração de ${numberOne} - ${numberTwo} é ${subt}. 
+O produto dos dois números é ${multi}. A divisão de ${numberOne} por ${numberTwo} é ${div}, e o resto é ${remainder}. O resultado da soma, ${sum}, é um número par.`)
+    } else {
+        alert(`O resultado da soma de ${numberOne} + ${numberTwo} é ${sum}. A subtração de ${numberOne} - ${numberTwo} é ${subt}. 
+O produto dos dois números é ${multi}. A divisão de ${numberOne} por ${numberTwo} é ${div}, e o resto é ${remainder}. O resultado da soma, ${sum}, é um número ímpar.`)
+    }
+
+
+
+    </script>
+</body>
+</html>
